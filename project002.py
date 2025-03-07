@@ -383,6 +383,8 @@ def main():
 
     # Title
     st.markdown("<h1 class='title'>Unit Converter</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; font-size: 1.2em;'>Created by: Kanwal Shahzadi</p>", unsafe_allow_html=True)
+
 
     # Create conversion dictionaries
     length_units = {
@@ -476,8 +478,10 @@ def main():
                         result = value
 
                 st.success(f'{value} {from_unit} = {result:.2f} {to_unit}')
+                
 
         st.markdown("</div>", unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main() 
+
